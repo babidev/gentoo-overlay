@@ -17,17 +17,18 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}
->=app-crypt/libsecret-0.18.5:0[crypt]
->=dev-libs/libdbusmenu-16.04.0
->=dev-libs/nss-3.47.1-r1:0
->=media-libs/alsa-lib-1.1.8:0
->=media-libs/libpng-1.2.46:0
->=net-print/cups-2.1.4:0
->=x11-libs/cairo-1.14.12:0
->=x11-libs/gtk+-3.10.0:3
->=x11-libs/libnotify-0.7.7:0
->=x11-libs/libXScrnSaver-1.2.2-r1:0
->=x11-libs/libXtst-1.2.3:0"
+>=app-crypt/libsecret-0.18.6[crypt]
+>=dev-libs/nss-3.45
+>=x11-libs/gtk+-3.24.0:3[cups]
+>=x11-libs/libnotify-0.7.8
+>=x11-libs/libxkbfile-1.1.0
+>=x11-libs/libXScrnSaver-1.2.2
+>=x11-libs/libXtst-1.2.2"
+
+#gtk+-3.24.0[cups] already pulls:
+#>=net-print/cups-2.0.0
+#>=x11-libs/cairo-1.14.0
+#>=x11-libs/gdk-pixbuf-2.30:2 which pulls >=media-libs/libpng-1.4
 
 QA_PRESTRIPPED="opt/${PN}/code"
 QA_PREBUILT="opt/${PN}/code"
