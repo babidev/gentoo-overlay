@@ -13,13 +13,13 @@ RESTRICT="mirror strip bindist"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="cups"
 
 DEPEND=""
 RDEPEND="${DEPEND}
 >=app-crypt/libsecret-0.18.6[crypt]
 >=dev-libs/nss-3.45
->=x11-libs/gtk+-3.24.0:3[cups]
+>=x11-libs/gtk+-3.24.0:3[cups?]
 >=x11-libs/libnotify-0.7.8
 >=x11-libs/libxkbfile-1.1.0
 >=x11-libs/libXScrnSaver-1.2.2
