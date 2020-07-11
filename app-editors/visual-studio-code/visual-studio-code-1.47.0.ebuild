@@ -17,13 +17,12 @@ IUSE="cups"
 
 DEPEND=""
 RDEPEND="${DEPEND}
->=app-crypt/libsecret-0.18.6[crypt]
->=dev-libs/nss-3.45
+>=app-crypt/libsecret-0.20.2[crypt]
+>=dev-libs/nss-3.49
 >=x11-libs/gtk+-3.24.0:3[cups?]
->=x11-libs/libnotify-0.7.8
 >=x11-libs/libxkbfile-1.1.0
->=x11-libs/libXScrnSaver-1.2.2
->=x11-libs/libXtst-1.2.2"
+>=x11-libs/libXScrnSaver-1.2.3
+>=x11-libs/libXtst-1.2.3"
 
 #gtk+-3.24.0[cups] already pulls:
 #>=net-print/cups-2.0.0
