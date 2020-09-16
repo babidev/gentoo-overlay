@@ -17,17 +17,17 @@ IUSE="cups"
 
 DEPEND=""
 RDEPEND="${DEPEND}
->=app-crypt/libsecret-0.20.2[crypt]
->=dev-libs/nss-3.49
->=x11-libs/gtk+-3.24.0:3[cups?]
+>=app-crypt/libsecret-0.20.3[crypt]
+>=dev-libs/nss-3.55
+>=x11-libs/gtk+-3.24.22:3[cups?]
 >=x11-libs/libxkbfile-1.1.0
 >=x11-libs/libXScrnSaver-1.2.3
 >=x11-libs/libXtst-1.2.3"
 
 #gtk+-3.24.0[cups] already pulls:
-#>=net-print/cups-2.0.0
+#>=net-print/cups-2.3.0
 #>=x11-libs/cairo-1.14.0
-#>=x11-libs/gdk-pixbuf-2.30:2 which pulls >=media-libs/libpng-1.4
+#>=x11-libs/gdk-pixbuf-2.40:2 which pulls >=media-libs/libpng-1.4
 
 QA_PRESTRIPPED="opt/${PN}/code"
 QA_PREBUILT="opt/${PN}/code"
