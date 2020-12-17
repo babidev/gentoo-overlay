@@ -25,9 +25,9 @@ RDEPEND="${DEPEND}
 >=x11-libs/libXtst-1.2.3"
 
 #gtk+-3.24.0[cups] already pulls:
-#>=net-print/cups-2.3.0
-#>=x11-libs/cairo-1.14.0
-#>=x11-libs/gdk-pixbuf-2.40:2 which pulls >=media-libs/libpng-1.4
+#>=net-print/cups-2.3.3
+#>=x11-libs/cairo-1.16.0
+#>=x11-libs/gdk-pixbuf-2.42:2 which pulls >=media-libs/libpng-1.4
 
 QA_PRESTRIPPED="opt/${PN}/code"
 QA_PREBUILT="opt/${PN}/code"
